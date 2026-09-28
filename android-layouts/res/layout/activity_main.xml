@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main Activity Layout - activity_main.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_lg">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_xl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smart Dual Elevator"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_xl"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Building Control System"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_md"
+                android:layout_marginTop="@dimen/spacing_xs" />
+        </LinearLayout>
+
+        <!-- Lift Shafts Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_xl">
+
+            <!-- Lift A Shaft -->
+            <include
+                layout="@layout/component_lift_shaft_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_xl" />
+
+            <!-- Lift B Shaft -->
+            <include
+                layout="@layout/component_lift_shaft_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Floor Panel Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/spacing_lg"
+            android:layout_marginBottom="@dimen/spacing_lg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Floor Call Panel"
+                style="@style/SectionTitle"
+                android:layout_marginBottom="@dimen/spacing_md" />
+
+            <!-- Floor 6 -->
+            <include layout="@layout/item_floor_row_6" />
+            <!-- Floor 5 -->
+            <include layout="@layout/item_floor_row_5" />
+            <!-- Floor 4 -->
+            <include layout="@layout/item_floor_row_4" />
+            <!-- Floor 3 -->
+            <include layout="@layout/item_floor_row_3" />
+            <!-- Floor 2 -->
+            <include layout="@layout/item_floor_row_2" />
+            <!-- Floor 1 (Ground) -->
+            <include layout="@layout/item_floor_row_1" />
+        </LinearLayout>
+
+        <!-- Status Panel -->
+        <include layout="@layout/component_status_panel" />
+    </LinearLayout>
+</ScrollView>

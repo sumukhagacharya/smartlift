@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Floor 2 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floor_row_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    style="@style/FloorRowStyle">
+
+    <TextView
+        android:layout_width="@dimen/floor_number_size"
+        android:layout_height="@dimen/floor_number_size"
+        android:text="2"
+        style="@style/FloorNumberBadge" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/spacing_md">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Floor 2"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_md"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Lift A Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/spacing_sm">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textColor="@color/lift_a"
+            android:textSize="@dimen/text_xs"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btn_floor2_a_up"
+                android:layout_width="@dimen/floor_button_size"
+                android:layout_height="@dimen/floor_button_size"
+                android:src="@drawable/ic_arrow_up"
+                android:background="@drawable/bg_call_button_a"
+                android:scaleType="center"
+                android:contentDescription="Lift A Up" />
+            <ImageButton
+                android:id="@+id/btn_floor2_a_down"
+                android:layout_width="@dimen/floor_button_size"
+                android:layout_height="@dimen/floor_button_size"
+                android:src="@drawable/ic_arrow_down"
+                android:background="@drawable/bg_call_button_a"
+                android:scaleType="center"
+                android:layout_marginStart="@dimen/spacing_xs"
+                android:contentDescription="Lift A Down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Lift B Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textColor="@color/lift_b"
+            android:textSize="@dimen/text_xs"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btn_floor2_b_up"
+                android:layout_width="@dimen/floor_button_size"
+                android:layout_height="@dimen/floor_button_size"
+                android:src="@drawable/ic_arrow_up"
+                android:background="@drawable/bg_call_button_b"
+                android:scaleType="center"
+                android:contentDescription="Lift B Up" />
+            <ImageButton
+                android:id="@+id/btn_floor2_b_down"
+                android:layout_width="@dimen/floor_button_size"
+                android:layout_height="@dimen/floor_button_size"
+                android:src="@drawable/ic_arrow_down"
+                android:background="@drawable/bg_call_button_b"
+                android:scaleType="center"
+                android:layout_marginStart="@dimen/spacing_xs"
+                android:contentDescription="Lift B Down" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

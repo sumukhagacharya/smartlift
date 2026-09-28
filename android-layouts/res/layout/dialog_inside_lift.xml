@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inside Lift Panel - Bottom Sheet Dialog -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_inside_panel"
+    android:padding="@dimen/spacing_xl">
+
+    <!-- Drag Handle -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:background="@color/border"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/spacing_lg" />
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/spacing_lg">
+
+        <TextView
+            android:id="@+id/tv_inside_lift_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inside Lift A"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_lg"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your floor"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_sm" />
+    </LinearLayout>
+
+    <!-- Current Floor Display -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bg_floor_row"
+        android:padding="@dimen/spacing_lg"
+        android:layout_marginBottom="@dimen/spacing_lg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Floor"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_sm" />
+
+        <TextView
+            android:id="@+id/tv_inside_current_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_2xl"
+            android:textStyle="bold"
+            android:fontFamily="monospace" />
+    </LinearLayout>
+
+    <!-- Floor Selection Grid -->
+    <GridLayout
+        android:id="@+id/gl_floor_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:layout_marginBottom="@dimen/spacing_lg">
+
+        <!-- Floor 6 Button -->
+        <Button
+            android:id="@+id/btn_select_floor_6"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/spacing_xs"
+            android:text="6"
+            android:textSize="@dimen/text_lg"
+            android:textStyle="bold"
+            android:background="@drawable/bg_floor_select_button" />
+
+        <!-- Floor 5 Button -->
+        <Button
+            android:id="@+id/btn_select_floor_5"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/spacing_xs"
+            android:text="5"
+            android:textSize="@dimen/text_lg"
+            android:textStyle="bold"
+            android:background="@drawable/bg_floor_select_button" />
+
+        <!-- Floor 4 Button -->
+        <Button
+            android:id="@+id/btn_select_floor_4"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/spacing_xs"
+            android:text="4"
+            android:textSize="@dimen/text_lg"
+            android:textStyle="bold"
+            android:background="@drawable/bg_floor_select_button" />
+
+        <!-- Floor 3 Button -->
+        <Button
+            android:id="@+id/btn_select_floor_3"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/spacing_xs"
+            android:text="3"
+            android:textSize="@dimen/text_lg"
+            android:textStyle="bold"
+            android:background="@drawable/bg_floor_select_button" />
+
+        <!-- Floor 2 Button -->
+        <Button
+            android:id="@+id/btn_select_floor_2"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/spacing_xs"
+            android:text="2"
+            android:textSize="@dimen/text_lg"
+            android:textStyle="bold"
+            android:background="@drawable/bg_floor_select_button" />
+
+        <!-- Floor 1 Button -->
+        <Button
+            android:id="@+id/btn_select_floor_1"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/spacing_xs"
+            android:text="1"
+            android:textSize="@dimen/text_lg"
+            android:textStyle="bold"
+            android:background="@drawable/bg_floor_select_button" />
+    </GridLayout>
+
+    <!-- Selected Stops Display -->
+    <LinearLayout
+        android:id="@+id/ll_selected_stops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/spacing_lg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Stops:"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_sm"
+            android:layout_marginBottom="@dimen/spacing_sm" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_stops_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <!-- Exit Button -->
+    <Button
+        android:id="@+id/btn_exit_lift"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Exit Lift"
+        android:textColor="@color/text_white"
+        android:background="@drawable/bg_lift_cabin_a"
+        android:textStyle="bold" />
+</LinearLayout>

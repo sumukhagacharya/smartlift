@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lift Shaft B Component -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Lift Label -->
+    <TextView
+        android:id="@+id/tv_lift_b_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lift B"
+        style="@style/LiftLabelB" />
+
+    <!-- Status Badge -->
+    <TextView
+        android:id="@+id/tv_lift_b_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDLE"
+        style="@style/StatusBadge.Idle"
+        android:layout_marginTop="@dimen/spacing_sm" />
+
+    <!-- Shaft Container -->
+    <FrameLayout
+        android:id="@+id/fl_shaft_b"
+        android:layout_width="@dimen/lift_shaft_width"
+        android:layout_height="280dp"
+        android:background="@drawable/bg_lift_shaft"
+        android:layout_marginTop="@dimen/spacing_sm">
+
+        <!-- Floor Markers -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Floor 6 marker -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/divider" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="6"
+                    android:textColor="@color/text_muted"
+                    android:textSize="@dimen/text_xs"
+                    android:fontFamily="monospace" />
+            </FrameLayout>
+
+            <!-- Floor 5 marker -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/divider" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="5"
+                    android:textColor="@color/text_muted"
+                    android:textSize="@dimen/text_xs"
+                    android:fontFamily="monospace" />
+            </FrameLayout>
+
+            <!-- Floor 4 marker -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/divider" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="4"
+                    android:textColor="@color/text_muted"
+                    android:textSize="@dimen/text_xs"
+                    android:fontFamily="monospace" />
+            </FrameLayout>
+
+            <!-- Floor 3 marker -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/divider" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="3"
+                    android:textColor="@color/text_muted"
+                    android:textSize="@dimen/text_xs"
+                    android:fontFamily="monospace" />
+            </FrameLayout>
+
+            <!-- Floor 2 marker -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/divider" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="2"
+                    android:textColor="@color/text_muted"
+                    android:textSize="@dimen/text_xs"
+                    android:fontFamily="monospace" />
+            </FrameLayout>
+
+            <!-- Floor 1 marker -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:textColor="@color/text_muted"
+                    android:textSize="@dimen/text_xs"
+                    android:fontFamily="monospace" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Lift Cabin B (positioned dynamically via Java) -->
+        <LinearLayout
+            android:id="@+id/ll_cabin_b"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lift_cabin_height"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_lift_cabin_b"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/tv_cabin_b_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_xl"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lift B"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_xs"
+                android:alpha="0.8"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1" />
+
+            <!-- Selected floors badge -->
+            <TextView
+                android:id="@+id/tv_cabin_b_badge"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/bg_status_moving"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/status_moving"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Tap hint -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to enter"
+        android:textColor="@color/text_muted"
+        android:textSize="@dimen/text_xs"
+        android:layout_marginTop="@dimen/spacing_sm" />
+</LinearLayout>
