@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base App Theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_light</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    
+    <!-- Card Style -->
+    <style name="CardStyle">
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:padding">@dimen/spacing_lg</item>
+    </style>
+    
+    <!-- Floor Row Style -->
+    <style name="FloorRowStyle">
+        <item name="android:background">@drawable/bg_floor_row</item>
+        <item name="android:padding">@dimen/spacing_sm</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_xs</item>
+    </style>
+    
+    <!-- Floor Number Badge -->
+    <style name="FloorNumberBadge">
+        <item name="android:background">@drawable/bg_floor_number</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+    
+    <!-- Lift Label Style -->
+    <style name="LiftLabelA">
+        <item name="android:background">@drawable/bg_lift_label_a</item>
+        <item name="android:textColor">@color/lift_a</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingHorizontal">@dimen/spacing_lg</item>
+        <item name="android:paddingVertical">@dimen/spacing_sm</item>
+    </style>
+    
+    <style name="LiftLabelB">
+        <item name="android:background">@drawable/bg_lift_label_b</item>
+        <item name="android:textColor">@color/lift_b</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingHorizontal">@dimen/spacing_lg</item>
+        <item name="android:paddingVertical">@dimen/spacing_sm</item>
+    </style>
+    
+    <!-- Status Badge Styles -->
+    <style name="StatusBadge">
+        <item name="android:textSize">@dimen/text_xs</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingHorizontal">@dimen/spacing_md</item>
+        <item name="android:paddingVertical">@dimen/spacing_xs</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="StatusBadge.Idle">
+        <item name="android:background">@drawable/bg_status_idle</item>
+        <item name="android:textColor">@color/status_idle</item>
+    </style>
+    
+    <style name="StatusBadge.Moving">
+        <item name="android:background">@drawable/bg_status_moving</item>
+        <item name="android:textColor">@color/status_moving</item>
+    </style>
+    
+    <style name="StatusBadge.Serving">
+        <item name="android:background">@drawable/bg_status_serving</item>
+        <item name="android:textColor">@color/status_serving</item>
+    </style>
+    
+    <!-- Call Button Style -->
+    <style name="CallButtonStyle">
+        <item name="android:layout_width">@dimen/floor_button_size</item>
+        <item name="android:layout_height">@dimen/floor_button_size</item>
+        <item name="android:background">@drawable/bg_call_button</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <!-- Section Title -->
+    <style name="SectionTitle">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

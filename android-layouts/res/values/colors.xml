@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#3B82F6</color>
+    <color name="primary_light">#DBEAFE</color>
+    <color name="secondary">#14B8A6</color>
+    <color name="secondary_light">#CCFBF1</color>
+    
+    <!-- Background Colors -->
+    <color name="background">#F8FAFC</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="floor_background">#F1F5F9</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_muted">#94A3B8</color>
+    <color name="text_white">#FFFFFF</color>
+    
+    <!-- Status Colors -->
+    <color name="status_idle">#22C55E</color>
+    <color name="status_idle_bg">#DCFCE7</color>
+    <color name="status_moving">#F59E0B</color>
+    <color name="status_moving_bg">#FEF3C7</color>
+    <color name="status_serving">#3B82F6</color>
+    <color name="status_serving_bg">#DBEAFE</color>
+    
+    <!-- Lift Colors -->
+    <color name="lift_a">#3B82F6</color>
+    <color name="lift_a_light">#DBEAFE</color>
+    <color name="lift_b">#14B8A6</color>
+    <color name="lift_b_light">#CCFBF1</color>
+    
+    <!-- Button Colors -->
+    <color name="button_inactive">#E2E8F0</color>
+    <color name="button_active">#F59E0B</color>
+    <color name="accent">#F59E0B</color>
+    
+    <!-- Border Colors -->
+    <color name="border">#E2E8F0</color>
+    <color name="divider">#F1F5F9</color>
+</resources>

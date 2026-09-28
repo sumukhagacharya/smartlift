@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Status Panel Component -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="@dimen/spacing_lg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="System Status"
+        style="@style/SectionTitle"
+        android:layout_marginBottom="@dimen/spacing_md" />
+
+    <!-- Status Grid -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Lift A Status -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/bg_floor_row"
+            android:padding="@dimen/spacing_md"
+            android:layout_marginEnd="@dimen/spacing_sm">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/bg_lift_cabin_a" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lift A"
+                    android:textColor="@color/lift_a"
+                    android:textSize="@dimen/text_md"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/spacing_sm" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_status_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Idle at Floor 1"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_sm"
+                android:layout_marginTop="@dimen/spacing_xs" />
+        </LinearLayout>
+
+        <!-- Lift B Status -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/bg_floor_row"
+            android:padding="@dimen/spacing_md">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/bg_lift_cabin_b" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lift B"
+                    android:textColor="@color/lift_b"
+                    android:textSize="@dimen/text_md"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/spacing_sm" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_status_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Idle at Floor 1"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_sm"
+                android:layout_marginTop="@dimen/spacing_xs" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
